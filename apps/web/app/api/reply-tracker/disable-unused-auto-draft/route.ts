@@ -11,7 +11,7 @@ const logger = createScopedLogger("auto-draft/disable-unused");
 
 // Force dynamic to ensure fresh data on each request
 export const dynamic = "force-dynamic";
-export const maxDuration = 300;
+export const maxDuration = 60;
 
 const MAX_DRAFTS_TO_CHECK = 10;
 

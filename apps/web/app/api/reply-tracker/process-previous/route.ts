@@ -10,7 +10,7 @@ import { getGmailClientForEmail } from "@/utils/account";
 
 const logger = createScopedLogger("api/reply-tracker/process-previous");
 
-export const maxDuration = 300;
+export const maxDuration = 60;
 
 const processPreviousSchema = z.object({ emailAccountId: z.string() });
 export type ProcessPreviousBody = z.infer<typeof processPreviousSchema>;

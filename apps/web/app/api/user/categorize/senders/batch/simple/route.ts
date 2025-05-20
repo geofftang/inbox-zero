@@ -8,7 +8,7 @@ import { createScopedLogger } from "@/utils/logger";
 
 const logger = createScopedLogger("api/user/categorize/senders/batch/simple");
 
-export const maxDuration = 300;
+export const maxDuration = 60;
 
 // Fallback when Qstash is not in use
 export const POST = withError(async (request) => {
