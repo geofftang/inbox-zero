@@ -1,14 +1,6 @@
 {
   "functions": {
-    "api/**/*.ts": { "maxDuration": 60 },
-    "api/**/*.js": { "maxDuration": 60 },
-    "app/api/**/*.ts": { "maxDuration": 60 },
-    "app/api/**/*.js": { "maxDuration": 60 },
-    "apps/web/api/**/*.ts": { "maxDuration": 60 },
-    "apps/web/api/**/*.js": { "maxDuration": 60 },
-    "apps/web/app/api/**/*.ts": { "maxDuration": 60 },
-    "apps/web/app/api/**/*.js": { "maxDuration": 60 },
-    "apps/web/app/(app)/[emailAccountId]/automation/**/*.ts": { "maxDuration": 60 },
-    "apps/web/app/(app)/[emailAccountId]/automation/**/*.js": { "maxDuration": 60 }
+    "**/*.ts": { "maxDuration": 60 },
+    "**/*.js": { "maxDuration": 60 }
   }
 }
