@@ -2,7 +2,7 @@ import { createScopedLogger } from "@/utils/logger";
 import { RedisSubscriber } from "@/utils/redis/subscriber";
 import { withEmailAccount } from "@/utils/middleware";
 
-export const maxDuration = 300;
+export const maxDuration = 60;
 
 const logger = createScopedLogger("email-stream");
 
