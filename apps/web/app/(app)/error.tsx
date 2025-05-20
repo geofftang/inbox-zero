@@ -1,12 +1,16 @@
 "use client";
 
 import { useEffect } from "react";
+import * as Sentry from "@sentry/nextjs";
 import { ErrorDisplay } from "@/components/ErrorDisplay";
 
 export default function ErrorBoundary({ error }: any) {
   useEffect(() => {
-    // Error logging removed
-    console.error(error);
+    try {
+      Sentry.captureException(error);
+    } catch (e) {
+      console.error(error);
+    }
   }, [error]);
 
   return (
