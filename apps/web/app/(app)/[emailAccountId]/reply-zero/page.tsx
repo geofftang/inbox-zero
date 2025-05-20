@@ -15,7 +15,7 @@ import { REPLY_ZERO_ONBOARDING_COOKIE } from "@/utils/cookies";
 import { ActionType } from "@prisma/client";
 import { prefixPath } from "@/utils/path";
 
-export const maxDuration = 300;
+export const maxDuration = 60;
 
 export default async function ReplyTrackerPage(props: {
   params: Promise<{ emailAccountId: string }>;
