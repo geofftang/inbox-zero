@@ -1,13 +1,13 @@
 "use client";
 
-import * as Sentry from "@sentry/nextjs";
 import { useEffect } from "react";
 import { ErrorDisplay } from "@/components/ErrorDisplay";
 import { Button } from "@/components/ui/button";
 
 export default function GlobalError({ error }: any) {
   useEffect(() => {
-    Sentry.captureException(error);
+    // Error logging removed
+    console.error(error);
   }, [error]);
 
   return (

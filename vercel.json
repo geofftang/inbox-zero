@@ -5,6 +5,9 @@
   "functions": {
     "api/email-stream.ts": {
       "maxDuration": 60
+    },
+    "api/google/webhook.ts": {
+      "maxDuration": 60
     }
   }
 }
