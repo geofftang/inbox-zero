@@ -1,12 +1,11 @@
 {
   "buildCommand": "cd ../.. && turbo run build --filter={apps/web}...",
   "installCommand": "pnpm install",
-  "ignoreCommand": "",
   "functions": {
-    "api/email-stream.ts": {
+    "app/**.ts": {
       "maxDuration": 60
     },
-    "api/google/webhook.ts": {
+    "api/**.ts": {
       "maxDuration": 60
     }
   }
