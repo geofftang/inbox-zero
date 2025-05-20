@@ -1,12 +1,8 @@
-{
-  "buildCommand": "cd ../.. && turbo run build --filter={apps/web}...",
-  "installCommand": "pnpm install",
-  "functions": {
-    "app/**.ts": {
-      "maxDuration": 60
-    },
-    "api/**.ts": {
-      "maxDuration": 60
-    }
+"functions": {
+  "app/**/*.ts": {
+    "maxDuration": 60
+  },
+  "api/**/*.ts": {
+    "maxDuration": 60
   }
 }
