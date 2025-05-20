@@ -1,5 +1,11 @@
 {
   "functions": {
+    "apps/web/app/(app)/**/*.ts": {
+      "maxDuration": 60
+    },
+    "apps/web/app/(app)/**/*.js": {
+      "maxDuration": 60
+    },
     "apps/web/app/api/**/*.ts": {
       "maxDuration": 60
     },
