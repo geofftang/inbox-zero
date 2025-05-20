@@ -1,0 +1,20 @@
+{
+  "functions": {
+    // ⏱ 60s: likely long-running or async-heavy
+    "apps/web/app/api/google/webhook/route.ts": { "maxDuration": 60 },
+    "apps/web/app/api/google/threads/route.ts": { "maxDuration": 60 },
+    "apps/web/app/api/email-stream/route.ts": { "maxDuration": 60 },
+    "apps/web/app/api/user/planned/route.ts": { "maxDuration": 60 },
+    "apps/web/app/api/reply-tracker/disable-unused-auto-draft/route.ts": { "maxDuration": 60 },
+    "apps/web/app/api/reply-tracker/process-previous/route.ts": { "maxDuration": 60 },
+    "apps/web/app/api/resend/summary/all/route.ts": { "maxDuration": 60 },
+    "apps/web/app/api/resend/summary/route.ts": { "maxDuration": 60 },
+    "apps/web/app/api/ai/analyze-sender-pattern/route.ts": { "maxDuration": 60 },
+
+    // ⏱ 10s: probably fast logic or internal queries
+    "apps/web/app/api/google/labels/route.ts": { "maxDuration": 10 },
+    "apps/web/app/api/google/watch/all/route.ts": { "maxDuration": 10 },
+    "apps/web/app/api/user/categorize/senders/batch/route.ts": { "maxDuration": 10 },
+    "apps/web/app/api/user/categorize/senders/batch/simple/route.ts": { "maxDuration": 10 }
+  }
+}
